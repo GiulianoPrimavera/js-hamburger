@@ -5,10 +5,10 @@ const closeMenu = document.querySelector (".fa-times");
 
 //quando l'icona dell'hamburger menu viene clickata il menu compare
 faBars.addEventListener ("click", function(){
-    menu.style.display = "block";
+   menu.classList.toggle("active");
 })
 
 //quado l'icona della x viene clickata il menu scompare
 closeMenu.addEventListener ("click", function(){
-    menu.style.display = "none";
+    menu.classList.toggle ("active");
 })
